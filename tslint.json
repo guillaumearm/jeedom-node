@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint-config-station",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+      "trailing-comma": [true, {
+        "multiline": {
+          "typeLiterals": "never",
+          "arrays": "always",
+          "objects": "always",
+          "functions": "always",
+          "imports": "always",
+          "exports": "always"
+        }
+      }],
+      "semicolon": [true, "never"]
+    },
+    "rulesDirectory": []
+}
