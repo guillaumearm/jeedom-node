@@ -1,5 +1,7 @@
-const identity = (x: any): any => {
+export const identity = (x: any): any => {
   return x
 }
 
-export default identity
+export default {
+  identity,
+}
