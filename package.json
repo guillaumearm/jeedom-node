@@ -28,6 +28,10 @@
     "types",
     "home-automation"
   ],
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/guillaumearm/jeedom-node.git"
+  },
   "author": "Guillaume ARM",
   "license": "MIT",
   "devDependencies": {
