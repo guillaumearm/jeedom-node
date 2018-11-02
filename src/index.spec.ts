@@ -1,18 +1,29 @@
-import { has } from 'ramda'
+import { setupRecorder } from 'nock-record'
 import * as jeedomNode from '.'
 
-const isJeedomNodeApi = has('identity')
+const record = setupRecorder({ mode: 'record' })
 
 describe('jeedom-node', () => {
   describe('exports', () => {
     const { default: defaultJeedomNodeApi, ...jeedomNodeApi } = jeedomNode
+    test('default export object keys are same as named export keys', () => {
+      expect(defaultJeedomNodeApi).toEqual(jeedomNodeApi)
+    })
+  })
 
-    test('jeedom-node api with named exports', () => {
-      expect(isJeedomNodeApi(jeedomNodeApi)).toBe(true)
+  describe('jeedom api', () => {
+    test('ping', async () => {
+      const { completeRecording } = await record('jeedom-ping')
+      const result = await jeedomNode.ping()
+      completeRecording()
+      expect(result).toMatchSnapshot()
     })
 
-    test('jeedom-node api exported as default', () => {
-      expect(isJeedomNodeApi(defaultJeedomNodeApi)).toBe(true)
+    test('version', async () => {
+      const { completeRecording } = await record('jeedom-version')
+      const result = await jeedomNode.version()
+      completeRecording()
+      expect(result).toMatchSnapshot()
     })
   })
 })

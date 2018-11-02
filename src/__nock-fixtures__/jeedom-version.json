@@ -1,0 +1,35 @@
+[
+    {
+        "scope": "http://192.168.1.60:80",
+        "method": "POST",
+        "path": "/core/api/jeeApi.php",
+        "body": {
+            "jsonrpc": "2.0",
+            "id": null,
+            "method": "version",
+            "params": {
+                "apikey": "42"
+            }
+        },
+        "status": 200,
+        "response": {
+            "jsonrpc": "2.0",
+            "id": null,
+            "result": "3.2.11"
+        },
+        "rawHeaders": [
+            "Date",
+            "Fri, 02 Nov 2018 22:33:49 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Content-Length",
+            "45",
+            "Connection",
+            "close",
+            "Content-Type",
+            "text/html; charset=UTF-8"
+        ]
+    }
+]

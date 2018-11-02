@@ -6,7 +6,11 @@
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "strict": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": [
+      "es6",
+      "dom"
+    ]
   },
   "include": [
     "src/**/*"
