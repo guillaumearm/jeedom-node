@@ -1,0 +1,40 @@
+# handle-io circleci configuration file
+
+version: 2
+jobs:
+  testall:
+    docker:
+      - image: circleci/node:9
+    filters:
+      branches:
+        ignore: gh-pages
+    steps:
+      - checkout
+      - restore-cache:
+          keys:
+            - jeedom-node-dependencies-{{ checksum "package.json" }}
+
+      # install latest npm version
+      - run: sudo npm install -g npm@latest
+
+      # install
+      - run: npm install
+
+      - save_cache:
+         paths:
+            - node_modules
+            - package-lock.json
+         key: jeedom-node-dependencies-{{ checksum "package.json" }}
+
+      # test:all
+      - run: npm run test:all
+
+      - store_artifacts:
+          path: ./dist
+
+
+workflows:
+  version: 2
+  build_test:
+    jobs:
+      - testall
