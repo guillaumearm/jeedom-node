@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { evolve } = require('ramda');
 
-const fixturesPath = path.resolve(__dirname, '../src/__nock-fixtures__');
+const fixturesPath = path.resolve(__dirname, '../tests/__nock-fixtures__');
 
 const jsonFilePaths = fs.readdirSync(fixturesPath);
 

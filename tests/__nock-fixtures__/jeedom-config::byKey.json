@@ -6,8 +6,9 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "version",
+            "method": "config::byKey",
             "params": {
+                "key": "name",
                 "apikey": "42"
             }
         },
@@ -15,11 +16,11 @@
         "response": {
             "jsonrpc": "2.0",
             "id": null,
-            "result": "3.2.11"
+            "result": "Jeedom"
         },
         "rawHeaders": [
             "Date",
-            "Sat, 03 Nov 2018 16:30:10 GMT",
+            "Sat, 03 Nov 2018 17:07:43 GMT",
             "Server",
             "Apache",
             "Access-Control-Allow-Origin",
