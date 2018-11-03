@@ -16,24 +16,27 @@ const api = Jeedom({
   apikey: '__JEEDOM_API_KEY__',
 });
 
-api.rpc('ping')
+api.ping()
   .then(pong => console.log(pong));
 
-api.rpc('object::byId', { id: 1 })
+api.version()
+  .then(version => console.log(version));
+
+api.object.byId({ id: 1 })
   .then(obj => console.log(obj));
 ```
 
 ### Typescript support
 several useful `jeedom`  types are available for typescript:
-````typescript
+```typescript
 import { default as Jeedom, JEqLogic } from 'jeedom';
-````
+```
 
 ### Development
-````bash
+```bash
 $ git clone https://github.com/guillaumearm/jeedom-node.git
 $ cd jeedom-node
 
 $ npm install
 $ npm run test:all
-````
+```

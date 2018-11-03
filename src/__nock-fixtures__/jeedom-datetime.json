@@ -6,7 +6,7 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "ping",
+            "method": "datetime",
             "params": {
                 "apikey": "42"
             }
@@ -15,17 +15,17 @@
         "response": {
             "jsonrpc": "2.0",
             "id": null,
-            "result": "pong"
+            "result": 1541259462.0145
         },
         "rawHeaders": [
             "Date",
-            "Sat, 03 Nov 2018 15:37:39 GMT",
+            "Sat, 03 Nov 2018 15:37:41 GMT",
             "Server",
             "Apache",
             "Access-Control-Allow-Origin",
             "*",
             "Content-Length",
-            "43",
+            "52",
             "Connection",
             "close",
             "Content-Type",

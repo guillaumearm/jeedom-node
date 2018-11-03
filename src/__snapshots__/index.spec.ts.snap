@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`jeedom-node jeedom api datetime 1`] = `1541259462.0145`;
+
 exports[`jeedom-node jeedom api ping 1`] = `"pong"`;
 
 exports[`jeedom-node jeedom api version 1`] = `"3.2.11"`;

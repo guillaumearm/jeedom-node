@@ -1,29 +1,36 @@
 import { setupRecorder } from 'nock-record'
-import * as jeedomNode from '.'
+import Jeedom from '.'
+
+const HOST = 'http://192.168.1.60'
 
 const record = setupRecorder({ mode: 'record' })
 
+const recordAndMatchSnapshot = (
+  testName: string,
+  recorder: (fileName: string) => Promise<{ completeRecording: () => void }>,
+  runEffect: () => Promise<any>,
+) => {
+  test(testName, async () => {
+    const { completeRecording } = await recorder(`jeedom-${testName}`)
+    const result = await runEffect()
+    completeRecording()
+    expect(result).toMatchSnapshot()
+  })
+}
+
 describe('jeedom-node', () => {
   describe('exports', () => {
-    const { default: defaultJeedomNodeApi, ...jeedomNodeApi } = jeedomNode
-    test('default export object keys are same as named export keys', () => {
-      expect(defaultJeedomNodeApi).toEqual(jeedomNodeApi)
+    test('default export should be a function', () => {
+      expect(typeof Jeedom).toBe('function')
     })
   })
 
   describe('jeedom api', () => {
-    test('ping', async () => {
-      const { completeRecording } = await record('jeedom-ping')
-      const result = await jeedomNode.ping()
-      completeRecording()
-      expect(result).toMatchSnapshot()
-    })
+    const apikey = process.env.JEEDOM_API_KEY || ''
+    const api = Jeedom({ host: HOST, apikey })
 
-    test('version', async () => {
-      const { completeRecording } = await record('jeedom-version')
-      const result = await jeedomNode.version()
-      completeRecording()
-      expect(result).toMatchSnapshot()
-    })
+    recordAndMatchSnapshot('ping', record, () => api.ping())
+    recordAndMatchSnapshot('version', record, () => api.version())
+    recordAndMatchSnapshot('datetime', record, () => api.datetime())
   })
 })

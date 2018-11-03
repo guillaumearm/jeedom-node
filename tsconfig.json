@@ -7,13 +7,18 @@
     "noUnusedLocals": true,
     "strict": true,
     "outDir": "./dist",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
     "lib": [
       "es6",
       "dom"
     ]
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "types/**/*"
   ],
   "exclude": [
     "node_modules",
