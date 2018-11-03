@@ -6,8 +6,9 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "datetime",
+            "method": "config::byKey",
             "params": {
+                "key": "version",
                 "apikey": "42"
             }
         },
@@ -15,7 +16,7 @@
         "response": {
             "jsonrpc": "2.0",
             "id": null,
-            "result": 1541261780.4365
+            "result": "3.2.11"
         },
         "rawHeaders": [
             "Date",
@@ -25,7 +26,7 @@
             "Access-Control-Allow-Origin",
             "*",
             "Content-Length",
-            "52",
+            "45",
             "Connection",
             "close",
             "Content-Type",

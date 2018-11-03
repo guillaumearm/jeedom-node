@@ -3,8 +3,6 @@ import Jeedom from '.'
 
 const HOST = 'http://192.168.1.60'
 
-const record = setupRecorder({ mode: 'record' })
-
 const recordAndMatchSnapshot = (
   testName: string,
   recorder: (fileName: string) => Promise<{ completeRecording: () => void }>,
@@ -25,12 +23,21 @@ describe('jeedom-node', () => {
     })
   })
 
-  describe('jeedom api', () => {
+  describe('api', () => {
+    const recorder = setupRecorder({ mode: 'record' })
+
+    const record = (testName: string, runEffect: () => Promise<any>) =>
+      recordAndMatchSnapshot(testName, recorder, runEffect)
+
     const apikey = process.env.JEEDOM_API_KEY || ''
     const api = Jeedom({ host: HOST, apikey })
 
-    recordAndMatchSnapshot('ping', record, () => api.ping())
-    recordAndMatchSnapshot('version', record, () => api.version())
-    recordAndMatchSnapshot('datetime', record, () => api.datetime())
+    record('ping', () => api.ping())
+    record('version', () => api.version())
+    record('datetime', () => api.datetime())
+
+    describe('config', () => {
+      record('config::byKey', () => api.config.byKey({ key: 'version' }))
+    })
   })
 })
