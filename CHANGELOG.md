@@ -1,3 +1,12 @@
+## [0.5.2](https://github.com/guillaumearm/jeedom-node/compare/v0.5.1...v0.5.2) (2018-11-03)
+
+
+### Bug Fixes
+
+* **typings:** config::save method ([7c627b5](https://github.com/guillaumearm/jeedom-node/commit/7c627b5))
+
+
+
 ## [0.5.1](https://github.com/guillaumearm/jeedom-node/compare/v0.5.0...v0.5.1) (2018-11-03)
 
 
