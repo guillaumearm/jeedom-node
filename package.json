@@ -7,6 +7,7 @@
   "scripts": {
     "clean": "rimraf dist/",
     "build": "tsc",
+    "preversion": "npm run prepublishOnly",
     "prepublishOnly": "npm run build && npm run test && npm run lint",
     "test": "NODE_ENV=test NODE_NO_HTTP2=1 JEEDOM_API_KEY=42 jest",
     "test:all": "npm run prepublishOnly",
