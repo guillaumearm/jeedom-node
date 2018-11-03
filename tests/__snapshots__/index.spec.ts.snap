@@ -2,7 +2,15 @@
 
 exports[`jeedom-node api config config::byKey 1`] = `"Jeedom"`;
 
-exports[`jeedom-node api datetime 1`] = `1541264863.1274`;
+exports[`jeedom-node api config config::save 1`] = `
+Array [
+  null,
+  "test",
+  null,
+]
+`;
+
+exports[`jeedom-node api datetime 1`] = `1541267798.788`;
 
 exports[`jeedom-node api ping 1`] = `"pong"`;
 

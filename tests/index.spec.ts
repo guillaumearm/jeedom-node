@@ -21,6 +21,12 @@ describe('jeedom-node', () => {
 
     describe('config', () => {
       recordTest('config::byKey', () => api.config.byKey({ key: 'name' }))
+      recordTest('config::save', async () => {
+        const res1 = await api.config.save({ plugin: '__test__', key: '__test__', value: 'test' })
+        const value = await api.config.byKey({ plugin: '__test__', key: '__test__' })
+        const res2 = await api.config.save({ plugin: '__test__', key: '__test__', value: '' })
+        return [res1, value, res2]
+      })
     })
   })
 })

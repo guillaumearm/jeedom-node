@@ -7,6 +7,7 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
   datetime: () => jeedomRpc('datetime'),
   config: {
     byKey: (params) => jeedomRpc('config::byKey', params),
+    save: (params) => jeedomRpc('config::save', params),
   },
 })
 
