@@ -13,6 +13,6 @@ export type ConfigSaveParams = {
 export type ConfigApi = {
   config: {
     byKey: (params: ConfigByKeyParams) => Promise<string>
-    save: (params: ConfigSaveParams) => Promise<null>
+    save: (params: ConfigSaveParams) => Promise<void>
   }
 }
