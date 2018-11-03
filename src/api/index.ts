@@ -1,5 +1,5 @@
 import { RpcInterface } from '../rpc/helpers'
-import { JeedomApi } from './types'
+import { JeedomApi } from './types/index'
 
 export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
   ping: () => jeedomRpc('ping'),
@@ -11,4 +11,4 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
   },
 })
 
-export * from './types'
+export * from './types/index'

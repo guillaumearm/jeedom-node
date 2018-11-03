@@ -10,10 +10,7 @@ export type ConfigSaveParams = {
   plugin?: string
 }
 
-export type JeedomApi = {
-  ping: () => Promise<'pong'>
-  version: () => Promise<string>
-  datetime: () => Promise<number>
+export type JeedomConfigApi = {
   config: {
     byKey: (params: ConfigByKeyParams) => Promise<string>
     save: (params: ConfigSaveParams) => Promise<null>
