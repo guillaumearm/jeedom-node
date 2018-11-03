@@ -24,8 +24,8 @@ api.ping()
 api.version()
   .then(version => console.log(version));
 
-api.object.byId({ id: 1 })
-  .then(obj => console.log(obj));
+api.config.byKey({ key: 'api' })
+  .then(configValue => console.log(configValue));
 ```
 
 ### Typescript support
