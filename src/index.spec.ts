@@ -37,7 +37,7 @@ describe('jeedom-node', () => {
     record('datetime', () => api.datetime())
 
     describe('config', () => {
-      record('config::byKey', () => api.config.byKey({ key: 'version' }))
+      record('config::byKey', () => api.config.byKey({ key: 'name' }))
     })
   })
 })

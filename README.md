@@ -24,8 +24,8 @@ api.ping()
 api.version()
   .then(version => console.log(version));
 
-api.config.byKey({ key: 'api' })
-  .then(configValue => console.log(configValue));
+api.config.byKey({ key: 'name' })
+  .then(jeedomName => console.log(jeedomName));
 ```
 
 ### Typescript support
