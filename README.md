@@ -31,7 +31,12 @@ api.object.byId({ id: 1 })
 ### Typescript support
 several useful `jeedom`  types are available for typescript:
 ```typescript
-import { default as Jeedom, JEqLogic } from 'jeedom';
+import { default as Jeedom, JeedomApi } from 'jeedom';
+
+const api: JeedomApi = Jeedom({
+  host: 'http://jeedomip',
+  apikey: '__JEEDOM_API_KEY__',
+});
 ```
 
 ### Development
