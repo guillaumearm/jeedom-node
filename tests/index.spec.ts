@@ -25,6 +25,7 @@ describe('jeedom-node', () => {
         const res1 = await api.config.save({ plugin: '__test__', key: '__test__', value: 'test' })
         const value = await api.config.byKey({ plugin: '__test__', key: '__test__' })
         const res2 = await api.config.save({ plugin: '__test__', key: '__test__', value: '' })
+        expect(value).toBe('test')
         return [res1, value, res2]
       })
     })
