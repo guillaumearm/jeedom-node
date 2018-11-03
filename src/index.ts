@@ -1,4 +1,3 @@
-import { pipe } from 'ramda'
 import { JeedomOptions } from './types'
 import { createJeedomApi, JeedomApi } from './api'
 import { createJeedomRpcInterface } from './rpc/jeedom'
@@ -13,11 +12,10 @@ const jeedomGuards = (options: JeedomOptions): JeedomOptions => {
   return options
 }
 
-const Jeedom: (options: JeedomOptions) => JeedomApi = pipe(
-  jeedomGuards,
-  createJeedomRpcInterface,
-  createJeedomApi,
-)
+const Jeedom = (options: JeedomOptions): JeedomApi => {
+  jeedomGuards(options)
+  return createJeedomApi(createJeedomRpcInterface(options))
+}
 
 export default Jeedom
 export * from './types'
