@@ -10,7 +10,7 @@ export type ConfigSaveParams = {
   plugin?: string
 }
 
-export type JeedomConfigApi = {
+export type ConfigApi = {
   config: {
     byKey: (params: ConfigByKeyParams) => Promise<string>
     save: (params: ConfigSaveParams) => Promise<null>

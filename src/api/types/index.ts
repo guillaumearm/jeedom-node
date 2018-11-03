@@ -1,4 +1,4 @@
-import { JeedomMiscApi } from './misc'
-import { JeedomConfigApi } from './config'
+import { MiscApi } from './misc'
+import { ConfigApi } from './config'
 
-export type JeedomApi = JeedomMiscApi & JeedomConfigApi
+export type JeedomApi = MiscApi & ConfigApi
