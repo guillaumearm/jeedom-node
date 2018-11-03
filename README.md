@@ -1,7 +1,9 @@
 # Jeedom API :house:
 [![CircleCI branch](https://img.shields.io/circleci/project/github/guillaumearm/handle-io/master.svg)](https://circleci.com/gh/guillaumearm/handle-io)
 
-This library provides [Jeedom jsonrpc API](https://jeedom.github.io/core/en_US/jsonrpc_api) bindings for node
+This library provides [Jeedom jsonrpc API](https://jeedom.github.io/core/en_US/jsonrpc_api) bindings for node.
+
+Please note this was tested on **Jeedom v3.2.1** and **node v8.11.1**.
 
 ### Installation
 ```bash
