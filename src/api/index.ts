@@ -9,6 +9,9 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
     byKey: (params) => jeedomRpc('config::byKey', params),
     save: (params) => jeedomRpc('config::save', params),
   },
+  event: {
+    changes: (params) => jeedomRpc('event::changes', params),
+  },
 })
 
 export * from './types/index'

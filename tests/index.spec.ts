@@ -28,5 +28,9 @@ describe('jeedom-node', () => {
         return [res1, value, res2]
       })
     })
+
+    describe('event', () => {
+      recordTest('event::changes', () => api.event.changes({}))
+    })
   })
 })
