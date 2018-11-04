@@ -5,7 +5,7 @@ export type JeedomObject = {
   id: string
   isVisible: '1' | '0'
   name: string
-  position: any
+  position: number | null
 }
 
 export type FullJeedomObject = JeedomObject & {
