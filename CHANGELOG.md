@@ -1,3 +1,18 @@
+# [0.7.0](https://github.com/guillaumearm/jeedom-node/compare/v0.6.1...v0.7.0) (2018-11-04)
+
+
+### Bug Fixes
+
+* **typings:** position property in JeedomObject ([0ce40cc](https://github.com/guillaumearm/jeedom-node/commit/0ce40cc))
+
+
+### Features
+
+* **api:** implement object::byId rpc method ([3fddf2d](https://github.com/guillaumearm/jeedom-node/commit/3fddf2d)), closes [#1](https://github.com/guillaumearm/jeedom-node/issues/1)
+* **api:** implement object::save rpc method ([5367c11](https://github.com/guillaumearm/jeedom-node/commit/5367c11)), closes [#1](https://github.com/guillaumearm/jeedom-node/issues/1)
+
+
+
 ## [0.6.1](https://github.com/guillaumearm/jeedom-node/compare/v0.6.0...v0.6.1) (2018-11-04)
 
 
