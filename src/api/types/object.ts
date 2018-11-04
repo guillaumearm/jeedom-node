@@ -19,5 +19,6 @@ export type ObjectApi = {
     all: () => Promise<JeedomObject[]>
     full: () => Promise<FullJeedomObject[]>
     fullById: (params: ObjectByIdParams) => Promise<FullJeedomObject>
+    byId: (params: ObjectByIdParams) => Promise<JeedomObject>
   }
 }

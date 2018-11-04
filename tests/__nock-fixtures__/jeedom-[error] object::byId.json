@@ -6,7 +6,7 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "object::fullById",
+            "method": "object::byId",
             "params": {
                 "id": -1,
                 "apikey": "42"

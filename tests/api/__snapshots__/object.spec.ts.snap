@@ -6,10 +6,24 @@ Array [
     "configuration": Object {},
     "display": Object {},
     "father_id": null,
-    "id": "13",
+    "id": "1",
     "isVisible": "1",
-    "name": "Automatismes",
-    "position": null,
+    "name": "Maison",
+    "position": "1",
+  },
+]
+`;
+
+exports[`object object::byId 1`] = `
+Array [
+  Object {
+    "configuration": Object {},
+    "display": Object {},
+    "father_id": null,
+    "id": "1",
+    "isVisible": "1",
+    "name": "Maison",
+    "position": "1",
   },
 ]
 `;
@@ -19,66 +33,12 @@ Array [
   Object {
     "configuration": Object {},
     "display": Object {},
-    "eqLogics": Array [
-      Object {
-        "category": Object {
-          "automatism": "1",
-          "default": "0",
-          "energy": "0",
-          "heating": "0",
-          "light": "0",
-          "multimedia": "0",
-          "security": "0",
-        },
-        "cmds": Array [
-          Object {
-            "alert": null,
-            "configuration": Object {},
-            "display": Object {},
-            "eqLogic_id": "119",
-            "eqType": "jeedouino",
-            "generic_type": "GENERIC_ACTION",
-            "html": null,
-            "id": "1479",
-            "isHistorized": "0",
-            "isVisible": "1",
-            "logicalId": "ID15a",
-            "name": "15_Send2LCD",
-            "order": "15",
-            "subType": "message",
-            "template": null,
-            "type": "action",
-            "unite": "",
-            "value": null,
-          },
-        ],
-        "comment": null,
-        "configuration": Object {},
-        "display": Object {},
-        "eqReal_id": null,
-        "eqType_name": "jeedouino",
-        "generic_type": null,
-        "id": "119",
-        "isEnable": "1",
-        "isVisible": "1",
-        "logicalId": "",
-        "name": "Serre",
-        "object_id": "13",
-        "order": "0",
-        "status": Object {
-          "danger": 0,
-          "lastCommunication": "2018-09-20 08:10:08",
-          "timeout": 0,
-          "warning": 0,
-        },
-        "timeout": null,
-      },
-    ],
+    "eqLogics": Array [],
     "father_id": null,
-    "id": "13",
+    "id": "1",
     "isVisible": "1",
-    "name": "Automatismes",
-    "position": null,
+    "name": "Maison",
+    "position": "1",
   },
 ]
 `;
@@ -103,7 +63,7 @@ Array [
           Object {
             "alert": null,
             "configuration": Object {},
-            "currentValue": 1,
+            "currentValue": 4,
             "display": Object {},
             "eqLogic_id": "204",
             "eqType": "virtual",
@@ -137,7 +97,7 @@ Array [
         "order": "0",
         "status": Object {
           "danger": 0,
-          "lastCommunication": "2018-11-04 14:43:51",
+          "lastCommunication": "2018-11-04 18:51:55",
           "timeout": 0,
           "warning": 0,
         },
@@ -148,7 +108,7 @@ Array [
     "id": "1",
     "isVisible": "1",
     "name": "Maison",
-    "position": null,
+    "position": "1",
   },
 ]
 `;

@@ -2,18 +2,17 @@
 
 exports[`rpc.event event::changes 1`] = `
 Object {
-  "datetime": 1541339723.767,
+  "datetime": 1541360022.3831,
   "result": Array [
     Object {
-      "datetime": 1541339604.5441,
+      "datetime": 1541359862.6922,
       "name": "cmd::update",
       "option": Object {
-        "alertLevel": "none",
-        "cmd_id": "1546",
-        "collectDate": "2018-11-04 14:53:24",
-        "display_value": 1,
-        "value": 0,
-        "valueDate": "2018-11-04 14:53:24",
+        "cmd_id": "557",
+        "collectDate": "2018-11-04 20:31:02",
+        "display_value": "Aucun",
+        "value": "Aucun",
+        "valueDate": "2018-11-03 00:00:05",
       },
     },
   ],

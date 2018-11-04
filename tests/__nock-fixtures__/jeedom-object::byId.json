@@ -1,0 +1,38 @@
+[
+    {
+        "scope": "http://192.168.1.60:80",
+        "method": "POST",
+        "path": "/core/api/jeeApi.php",
+        "body": {
+            "jsonrpc": "2.0",
+            "id": null,
+            "method": "object::byId",
+            "params": {
+                "id": 1,
+                "apikey": "42"
+            }
+        },
+        "status": 200,
+        "response": [
+            "1f8b08000000000000038595cb6edb3010457f25186fd556b2d3458534401120bb7615746307012dd1165b3e043ee20686ffbd2425ca092dd25a91732f859973f538c21f25b8ec1ba861f9b98402480b3537941620b13254437df435a8acc811c376f913117bcaee77487758be9ccf10f59b28b2a5783cd00b4534b1de61db08be237b23d1503b428f24e6fa97615b2ca12e0b50863124dfea7a4fc516d1ba56b83192e8377b07d7de85cec478ff59b51542a6b403e1ad38a894ac3aa3354e9ea664dfe994288ca638a96acc7a6c1918895396ce30d266a6a656e78e6dd2d18bc365f31d69b18582d55f2dfa34dbc8368f3832cd918e2c09e07153f3dc23d72cfec8339f4264ca8411395399c49d25a3898c998498d8128aaf05145cb97c82271d4f7064d3991aca85134c996c8225174df05c4d2618f3c14c5d5dc925f86662715faa7314ebe7020272b71ed0bad584d06d26546e3322591fa161ee63baa856ab85fbdaf2572c070ea7621257d56d4efc9616abe5d79c7871d2b616a2706d7e40ee0a67b47e8a7708dd7e44b57e3ed9a368ff20a87fc816a5bfc0179ff03f3d098ffeb2c2f96d1f08bf7781c33b3e6eb3ea587d7925521b44fdef0796e5ad9d155aa27a8a7c62a4f12fc51db9692852eafbc6576e98ff797dea8451b8aa961bb8bfdb7c21f7f07184ddae44653333c2349bc2bc7d123ffa7e20793afd07e69bba8e4c070000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Sun, 04 Nov 2018 19:33:43 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Vary",
+            "Accept-Encoding",
+            "Content-Encoding",
+            "gzip",
+            "Content-Length",
+            "518",
+            "Connection",
+            "close",
+            "Content-Type",
+            "text/html; charset=UTF-8"
+        ]
+    }
+]
