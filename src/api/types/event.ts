@@ -2,10 +2,15 @@ export type EventChangesParams = {
   datetime?: number
 }
 
-export type EventChangesResponse = {
+export type EventChangesResult = {
   datetime: number
   name: string
   option: any
+}
+
+export type EventChangesResponse = {
+  datetime: number
+  result: EventChangesResult[]
 }
 
 export type EventApi = {
