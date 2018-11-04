@@ -1,7 +1,7 @@
 # Jeedom API :house:
-[![CircleCI branch](https://img.shields.io/circleci/project/github/guillaumearm/handle-io/master.svg)](https://circleci.com/gh/guillaumearm/handle-io)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/guillaumearm/jeedom-node/master.svg)](https://circleci.com/gh/guillaumearm/jeedom-node)
 [![npm](https://img.shields.io/npm/v/jeedom.svg)](https://www.npmjs.com/package/jeedom)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/guillaumearm/handle-io/blob/master/CONTRIBUTING.md)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/guillaumearm/jeedom-node/blob/master/CONTRIBUTING.md)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 This library provides [Jeedom jsonrpc API](https://jeedom.github.io/core/en_US/jsonrpc_api) bindings for node.

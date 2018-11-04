@@ -1,4 +1,4 @@
-# handle-io circleci configuration file
+# jeedom-node circleci configuration file
 
 version: 2
 jobs:
