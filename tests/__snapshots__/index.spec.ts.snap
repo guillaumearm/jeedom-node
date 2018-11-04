@@ -10,16 +10,16 @@ Array [
 ]
 `;
 
-exports[`jeedom-node api datetime 1`] = `1541329049.7215`;
+exports[`jeedom-node api datetime 1`] = `1541330668.0091`;
 
 exports[`jeedom-node api event event::changes 1`] = `
 Object {
-  "datetime": 1541329049.4544,
+  "datetime": 1541330664.8321,
   "result": Array [
     Object {
-      "datetime": 1541328815.1576,
+      "datetime": 1541330426.8833,
       "name": "eibd::monitor",
-      "option": "{\\"Mode\\":\\"Write\\",\\"AdresseGroupe\\":\\"4\\\\/3\\\\/1\\",\\"AdressePhysique\\":\\"1.1.27\\",\\"data\\":\\"0x 0\\",\\"valeur\\":0,\\"DataPointType\\":\\"1.xxx\\",\\"cmdJeedom\\":\\"La commande n'exites pas\\",\\"datetime\\":\\"04-11-2018 11:53:35\\"}",
+      "option": "{\\"Mode\\":\\"Write\\",\\"AdresseGroupe\\":\\"1\\\\/1\\\\/12\\",\\"AdressePhysique\\":\\"1.1.44\\",\\"data\\":\\"0x  8b 82\\",\\"valeur\\":[139,130],\\"DataPointType\\":\\"1.xxx\\",\\"cmdJeedom\\":\\"La commande n'exites pas\\",\\"datetime\\":\\"04-11-2018 12:20:26\\"}",
     },
   ],
 }
@@ -103,6 +103,76 @@ Array [
     "id": "13",
     "isVisible": "1",
     "name": "Automatismes",
+    "position": null,
+  },
+]
+`;
+
+exports[`jeedom-node api object object::fullById 1`] = `
+Array [
+  Object {
+    "configuration": Object {},
+    "display": Object {},
+    "eqLogics": Array [
+      Object {
+        "category": Object {
+          "automatism": "0",
+          "default": "0",
+          "energy": "0",
+          "heating": "0",
+          "light": "0",
+          "multimedia": "0",
+          "security": "0",
+        },
+        "cmds": Array [
+          Object {
+            "alert": null,
+            "configuration": Object {},
+            "currentValue": 2,
+            "display": Object {},
+            "eqLogic_id": "204",
+            "eqType": "virtual",
+            "generic_type": null,
+            "html": null,
+            "id": "1782",
+            "isHistorized": "0",
+            "isVisible": "1",
+            "logicalId": "light",
+            "name": "Lumière",
+            "order": "0",
+            "subType": "numeric",
+            "template": null,
+            "type": "info",
+            "unite": "",
+            "value": null,
+          },
+        ],
+        "comment": null,
+        "configuration": Object {},
+        "display": Object {},
+        "eqReal_id": null,
+        "eqType_name": "virtual",
+        "generic_type": null,
+        "id": "204",
+        "isEnable": "1",
+        "isVisible": "0",
+        "logicalId": "summary1",
+        "name": "Résumé",
+        "object_id": "1",
+        "order": "0",
+        "status": Object {
+          "danger": 0,
+          "lastCommunication": "2018-11-04 10:56:17",
+          "timeout": 0,
+          "warning": 0,
+        },
+        "timeout": null,
+      },
+    ],
+    "father_id": null,
+    "id": "1",
+    "isVisible": "1",
+    "name": "Maison",
     "position": null,
   },
 ]

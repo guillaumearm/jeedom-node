@@ -12,9 +12,12 @@ export type FullJeedomObject = JeedomObject & {
   eqLogics: any
 }
 
+export type ObjectFullByIdParams = { id: number }
+
 export type ObjectApi = {
   object: {
     all: () => Promise<JeedomObject[]>
     full: () => Promise<FullJeedomObject[]>
+    fullById: (params: ObjectFullByIdParams) => Promise<FullJeedomObject>
   }
 }

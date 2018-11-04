@@ -1,0 +1,38 @@
+[
+    {
+        "scope": "http://192.168.1.60:80",
+        "method": "POST",
+        "path": "/core/api/jeeApi.php",
+        "body": {
+            "jsonrpc": "2.0",
+            "id": null,
+            "method": "object::fullById",
+            "params": {
+                "id": 1,
+                "apikey": "42"
+            }
+        },
+        "status": 200,
+        "response": [
+            "1f8b0800000000000003ad575d6fdb3614fd2b01f3ea6c92937489d615d8860d1bd0b54016f425090c5aba96d8f14325a93859e0ffbecb0fc98a2c292956270f22efe1d5e539e6b9f413f96c94d4754e32b2fc2e210bc20a92c986f305d1601a6e49f6e4e7488a414905e0e35f94e12a1c6fa8ad40aff66b98f9c40c5b73880b6a659865888df15cc90d2b1b4dc3e413a9a906693f34620d9a64c982984608aa1fb3ace46a4d799619c81bcdec236674f51dc4850ab9c6a385527a2ab665b2505b33153655632d4caee6acacec54503596c364d482a8013968344c41aa46b06266d71ce3d2913b89a8d5f6b0f88a1580a480f9c7aa7a9adb016c9ce201688ce9016482f06151e3bc0f50a3f40f30e32a0c4033620c90539a0c2b9b9466009c5148a835e3f092402d6a4e9f16332d4f8b9855a72b684e9c1634a34d0b9993a6c5bca84c0b9c17a6abea055d5adc882ccea9f652dcdc2d484bb97b0ed4baa78e4237e8a8728348c9cd13c98573d3e3f4f4f4d8d9adbc071d78d82dbae0697a3617bc9c0ea6cbf3b9e0c14a2cad95c295f98c7237b1a7d6efa247a11b47aa6eee76b89496bf2aeebf64c789ff103f790d0fb60bfcee3f18d89ff6c0701f451cbdf1eb361a8db3ab7ba66d43b9ef3f64999ce15e49c14ccda9578ce5fe50bc654739a7c6fc74eb678e84ef5e27956a0ca4e9f296bc7b7bfb3d7b479e6f61b34968928f6ca1db9b01595cab9feb3ad24ce0cb7b55b2dc7899bb9abaae7975db24095c62f1e10123dce129ffd361e3a65cd72c418266f9ca3ed6d0764eb5fe0cb95d75ad18be5c637415734726fcfc15444a0e5bb26ff0e63749f71dfaa023e71aa805cb7cde65925e9c249727cb8ba3f432c3ffe40daea18d551a367841a882204d5d4cad599e67e79e1d17c5af5a7713c005a50a47abc2373259b667eeb9e7392eca76d077165785c08546c40981d7157c49c1689c286043fd1526e8d3fb6a984a6d3f7a463f20811fe53d832dc9d2c541a0988c882e5241acca55449c0b14b6da0ff195b86f74606aaab5a2ba40677302a0d3508da9d0238c271e2f42ee34b977d9473c924eea9a160552939dd60f3fba3db4c93a8ffcdf990ecb42b7c8b2f4878ba57372093ecfabd0b9428390afc4a75f953d1dcd3e6061aef069e8ebf38e953c0dedf222d94a175d4fc9951028507b108c45bbf5b2a149a1cd08d1483485d8d1fd614ad393e4ec284db2f337989bf4ce125e98b7544b7f78f0b9a0b2f4f7687c2556d27322b7d581e184b334ee36c15d9e194b749af7d802bc7f5d608b78beb19000dbcb4679935ec71cb211ee05a473c855cf1c99f98319b413f62f14310feedf4230964377a23c6f78086ac03e25ff46fee013e50d1ccc5e074372d6c0640f22e84337da85a6c7a9ed36df6f21be55fec2a4bf04041ba9ace02df43ea419fff143b96fb3d1ef1aed7ee9c4f72e5d576e854907c2b4d6fab5d25cd18da62caf981e1786e69ec5be34cafd7efb06c284d226890cc36f419c9bdbdde1dfee3f6d12eacfbb0e0000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Sun, 04 Nov 2018 11:24:28 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Vary",
+            "Accept-Encoding",
+            "Content-Encoding",
+            "gzip",
+            "Content-Length",
+            "1095",
+            "Connection",
+            "close",
+            "Content-Type",
+            "text/html; charset=UTF-8"
+        ]
+    }
+]

@@ -15,6 +15,7 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
   object: {
     all: () => jeedomRpc('object::all'),
     full: () => jeedomRpc('object::full'),
+    fullById: (params) => jeedomRpc('object::fullById', params),
   },
 })
 

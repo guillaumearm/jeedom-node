@@ -78,6 +78,22 @@ describe('jeedom-node', () => {
 
         expect(prepareData(fullObjects)).toMatchSnapshot()
       })
+
+      recordTest('object::fullById', async () => {
+        const fullObjects = [await api.object.fullById({ id: 1 })]
+
+        const prepareData = prepareGenericData(evolve({
+          eqLogics: prepareGenericData(evolve({
+            cmds: prepareGenericData(identity),
+          })),
+        }))
+
+        expect(prepareData(fullObjects)).toMatchSnapshot()
+      })
+
+      recordTest('[error] object::fullById', () => {
+        return expect(api.object.fullById({ id: -1 })).rejects.toThrow('Objet introuvable : -1')
+      })
     })
   })
 })
