@@ -1,3 +1,12 @@
+## [0.6.1](https://github.com/guillaumearm/jeedom-node/compare/v0.6.0...v0.6.1) (2018-11-04)
+
+
+### Bug Fixes
+
+* **readme:** wrong badges urls ([79a77f0](https://github.com/guillaumearm/jeedom-node/commit/79a77f0))
+
+
+
 # [0.6.0](https://github.com/guillaumearm/jeedom-node/compare/v0.5.2...v0.6.0) (2018-11-04)
 
 
