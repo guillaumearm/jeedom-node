@@ -1,3 +1,21 @@
+# [0.6.0](https://github.com/guillaumearm/jeedom-node/compare/v0.5.2...v0.6.0) (2018-11-04)
+
+
+### Bug Fixes
+
+* **typings:** bad event::changes response type ([dd74cd5](https://github.com/guillaumearm/jeedom-node/commit/dd74cd5))
+* **typings:** make event::changes params optional ([7b0efe8](https://github.com/guillaumearm/jeedom-node/commit/7b0efe8))
+* **typings:** position type on JeedomObject ([df6d411](https://github.com/guillaumearm/jeedom-node/commit/df6d411))
+
+
+### Features
+
+* **api:** implement object::all method ([6833c41](https://github.com/guillaumearm/jeedom-node/commit/6833c41)), closes [#1](https://github.com/guillaumearm/jeedom-node/issues/1)
+* **api:** implement object::full rpc method ([79b0af9](https://github.com/guillaumearm/jeedom-node/commit/79b0af9)), closes [#1](https://github.com/guillaumearm/jeedom-node/issues/1)
+* **api:** implement object::fullById rpc method ([a751019](https://github.com/guillaumearm/jeedom-node/commit/a751019)), closes [#1](https://github.com/guillaumearm/jeedom-node/issues/1)
+
+
+
 ## [0.5.2](https://github.com/guillaumearm/jeedom-node/compare/v0.5.1...v0.5.2) (2018-11-03)
 
 
