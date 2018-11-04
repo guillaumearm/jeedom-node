@@ -8,10 +8,13 @@ export type JeedomObject = {
   position: any
 }
 
-export type AllResponse = JeedomObject[]
+export type FullJeedomObject = JeedomObject & {
+  eqLogics: any
+}
 
 export type ObjectApi = {
   object: {
-    all: () => Promise<AllResponse>
+    all: () => Promise<JeedomObject[]>
+    full: () => Promise<FullJeedomObject[]>
   }
 }

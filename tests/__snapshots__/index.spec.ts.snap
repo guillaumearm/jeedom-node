@@ -10,18 +10,16 @@ Array [
 ]
 `;
 
-exports[`jeedom-node api datetime 1`] = `1541326095.9178`;
+exports[`jeedom-node api datetime 1`] = `1541329049.7215`;
 
 exports[`jeedom-node api event event::changes 1`] = `
 Object {
-  "datetime": 1541326094.048,
+  "datetime": 1541329049.4544,
   "result": Array [
     Object {
-      "datetime": 1541325903.4416,
-      "name": "eqLogic::update",
-      "option": Object {
-        "eqLogic_id": "97",
-      },
+      "datetime": 1541328815.1576,
+      "name": "eibd::monitor",
+      "option": "{\\"Mode\\":\\"Write\\",\\"AdresseGroupe\\":\\"4\\\\/3\\\\/1\\",\\"AdressePhysique\\":\\"1.1.27\\",\\"data\\":\\"0x 0\\",\\"valeur\\":0,\\"DataPointType\\":\\"1.xxx\\",\\"cmdJeedom\\":\\"La commande n'exites pas\\",\\"datetime\\":\\"04-11-2018 11:53:35\\"}",
     },
   ],
 }
@@ -32,6 +30,75 @@ Array [
   Object {
     "configuration": Object {},
     "display": Object {},
+    "father_id": null,
+    "id": "13",
+    "isVisible": "1",
+    "name": "Automatismes",
+    "position": null,
+  },
+]
+`;
+
+exports[`jeedom-node api object object::full 1`] = `
+Array [
+  Object {
+    "configuration": Object {},
+    "display": Object {},
+    "eqLogics": Array [
+      Object {
+        "category": Object {
+          "automatism": "1",
+          "default": "0",
+          "energy": "0",
+          "heating": "0",
+          "light": "0",
+          "multimedia": "0",
+          "security": "0",
+        },
+        "cmds": Array [
+          Object {
+            "alert": null,
+            "configuration": Object {},
+            "display": Object {},
+            "eqLogic_id": "119",
+            "eqType": "jeedouino",
+            "generic_type": "GENERIC_ACTION",
+            "html": null,
+            "id": "1479",
+            "isHistorized": "0",
+            "isVisible": "1",
+            "logicalId": "ID15a",
+            "name": "15_Send2LCD",
+            "order": "15",
+            "subType": "message",
+            "template": null,
+            "type": "action",
+            "unite": "",
+            "value": null,
+          },
+        ],
+        "comment": null,
+        "configuration": Object {},
+        "display": Object {},
+        "eqReal_id": null,
+        "eqType_name": "jeedouino",
+        "generic_type": null,
+        "id": "119",
+        "isEnable": "1",
+        "isVisible": "1",
+        "logicalId": "",
+        "name": "Serre",
+        "object_id": "13",
+        "order": "0",
+        "status": Object {
+          "danger": 0,
+          "lastCommunication": "2018-09-20 08:10:08",
+          "timeout": 0,
+          "warning": 0,
+        },
+        "timeout": null,
+      },
+    ],
     "father_id": null,
     "id": "13",
     "isVisible": "1",

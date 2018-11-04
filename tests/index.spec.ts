@@ -1,8 +1,18 @@
 import { setupRecorder } from 'nock-record'
-import { evolve, take, pipe, map, assoc } from 'ramda'
+import { identity, evolve, take, pipe, map, assoc } from 'ramda'
 import { createRecordTest } from './utils'
 import Jeedom from '../src'
 import { JEEDOM_HOST, JEEDOM_API_KEY } from './constants'
+
+type GenericTransform = (x: any) => any
+const prepareGenericData = (transform: GenericTransform) => pipe(
+  take(1),
+  map(pipe(
+    transform,
+    assoc('display', {}),
+    assoc('configuration', {}),
+  )),
+)
 
 describe('jeedom-node', () => {
   describe('exports', () => {
@@ -52,16 +62,21 @@ describe('jeedom-node', () => {
     describe('object', () => {
       recordTest('object::all', async () => {
         const objects = await api.object.all()
-
-        const prepareData = pipe(
-          take(1),
-          map(pipe(
-            assoc('display', {}),
-            assoc('configuration', {}),
-          )),
-        )
+        const prepareData = prepareGenericData(identity)
 
         expect(prepareData(objects)).toMatchSnapshot()
+      })
+
+      recordTest('object::full', async () => {
+        const fullObjects = await api.object.full()
+
+        const prepareData = prepareGenericData(evolve({
+          eqLogics: prepareGenericData(evolve({
+            cmds: prepareGenericData(identity),
+          })),
+        }))
+
+        expect(prepareData(fullObjects)).toMatchSnapshot()
       })
     })
   })
