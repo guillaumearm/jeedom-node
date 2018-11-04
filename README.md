@@ -13,6 +13,7 @@ Please note this was tested on **Jeedom v3.2.1** and **node v8.11.1**.
 $ npm install --save jeedom
 ```
 
+
 ### Basic Usage
 
 ```js
@@ -43,6 +44,11 @@ const api: JeedomApi = Jeedom({
   apikey: '__JEEDOM_API_KEY__',
 });
 ```
+
+
+#### Typescript Documentation
+
+https://guillaumearm.github.io/jeedom-node/
 
 ### Development
 ```bash
