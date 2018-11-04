@@ -31,7 +31,7 @@ describe('jeedom-node', () => {
     })
 
     describe('event', () => {
-      recordTest('event::changes', () => api.event.changes({}))
+      recordTest('event::changes', () => api.event.changes())
     })
 
     describe('object', () => {

@@ -10,6 +10,6 @@ export type EventChangesResponse = {
 
 export type EventApi = {
   event: {
-    changes: (params: EventChangesParams) => Promise<EventChangesResponse>
+    changes: (params?: EventChangesParams) => Promise<EventChangesResponse>
   }
 }
