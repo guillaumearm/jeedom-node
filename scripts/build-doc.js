@@ -9,7 +9,7 @@ const typedoc = join(bin, 'typedoc')
 
 const exec = (cmd) => execSync(cmd).toString()
 
-const name = `${packageJson.name} ${packageJson.version}`
+const name = `${packageJson.name}-node ${packageJson.version}`
 const outputFolder = join(root, 'doc')
 
 const inputFiles = ['src/index.ts', 'src/types.ts', 'src/api/types']
