@@ -15,17 +15,17 @@
         "response": {
             "jsonrpc": "2.0",
             "id": null,
-            "result": 1541277799.1366
+            "result": 1541322856.051
         },
         "rawHeaders": [
             "Date",
-            "Sat, 03 Nov 2018 20:43:19 GMT",
+            "Sun, 04 Nov 2018 09:14:16 GMT",
             "Server",
             "Apache",
             "Access-Control-Allow-Origin",
             "*",
             "Content-Length",
-            "52",
+            "51",
             "Connection",
             "close",
             "Content-Type",

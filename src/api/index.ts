@@ -12,6 +12,9 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
   event: {
     changes: (params) => jeedomRpc('event::changes', params),
   },
+  object: {
+    all: () => jeedomRpc('object::all'),
+  },
 })
 
 export * from './types/index'
