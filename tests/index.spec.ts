@@ -1,4 +1,5 @@
 import { setupRecorder } from 'nock-record'
+import { evolve, take, pipe, map, assoc } from 'ramda'
 import { createRecordTest } from './utils'
 import Jeedom from '../src'
 import { JEEDOM_HOST, JEEDOM_API_KEY } from './constants'
@@ -15,27 +16,53 @@ describe('jeedom-node', () => {
 
     const api = Jeedom({ host: JEEDOM_HOST, apikey: JEEDOM_API_KEY })
 
-    recordTest('ping', () => api.ping())
-    recordTest('version', () => api.version())
-    recordTest('datetime', () => api.datetime())
+    recordTest('ping', async () => {
+      expect(await api.ping()).toMatchSnapshot()
+    })
+    recordTest('version', async () => {
+      expect(await api.version()).toMatchSnapshot()
+    })
+    recordTest('datetime', async () => {
+      expect(await api.datetime()).toMatchSnapshot()
+    })
 
     describe('config', () => {
-      recordTest('config::byKey', () => api.config.byKey({ key: 'name' }))
+      recordTest('config::byKey', async () => {
+        expect(await api.config.byKey({ key: 'name' })).toMatchSnapshot()
+      })
+
       recordTest('config::save', async () => {
         const res1 = await api.config.save({ plugin: '__test__', key: '__test__', value: 'test' })
         const value = await api.config.byKey({ plugin: '__test__', key: '__test__' })
         const res2 = await api.config.save({ plugin: '__test__', key: '__test__', value: '' })
         expect(value).toBe('test')
-        return [res1, value, res2]
+        expect([res1, value, res2]).toMatchSnapshot()
       })
     })
 
     describe('event', () => {
-      recordTest('event::changes', () => api.event.changes())
+      recordTest('event::changes', async () => {
+        const changes = await api.event.changes()
+        const prepareData = evolve({ result: take(1) })
+
+        expect(prepareData(changes)).toMatchSnapshot()
+      })
     })
 
     describe('object', () => {
-      recordTest('object::all', () => api.object.all())
+      recordTest('object::all', async () => {
+        const objects = await api.object.all()
+
+        const prepareData = pipe(
+          take(1),
+          map(pipe(
+            assoc('display', {}),
+            assoc('configuration', {}),
+          )),
+        )
+
+        expect(prepareData(objects)).toMatchSnapshot()
+      })
     })
   })
 })

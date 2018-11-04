@@ -8,6 +8,6 @@ export const createRecordTest = (prefix: string, recorder: Recorder) => (
     const { completeRecording } = await recorder(`${prefix}-${testName}`)
     const result = await runEffect()
     completeRecording()
-    expect(result).toMatchSnapshot()
+    return result
   })
 }
