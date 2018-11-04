@@ -6,10 +6,10 @@ Array [
     "configuration": Object {},
     "display": Object {},
     "father_id": null,
-    "id": "1",
-    "isVisible": "1",
-    "name": "Maison",
-    "position": "1",
+    "id": "21",
+    "isVisible": "0",
+    "name": "Test jeedom-node",
+    "position": null,
   },
 ]
 `;
@@ -111,4 +111,22 @@ Array [
     "position": "1",
   },
 ]
+`;
+
+exports[`object object::save 1`] = `
+Object {
+  "configuration": Object {
+    "desktop::summaryTextColor": "",
+    "mobile::summaryTextColor": "",
+    "parentNumber": 0,
+    "tagColor": "#000000",
+    "tagTextColor": "#FFFFFF",
+  },
+  "display": null,
+  "father_id": null,
+  "id": "21",
+  "isVisible": "0",
+  "name": "Test jeedom-node",
+  "position": null,
+}
 `;

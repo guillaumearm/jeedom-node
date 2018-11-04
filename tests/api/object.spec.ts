@@ -1,4 +1,5 @@
 import { evolve, identity } from 'ramda'
+import { JeedomObject } from "../../src/api/types";
 import { prepareGenericData, prepareJeedomTest } from '../utils'
 
 describe('object', () => {
@@ -44,5 +45,15 @@ describe('object', () => {
     const response = api.object.byId({ id: -1 })
     const expectedError = 'Objet introuvable : -1'
     return expect(response).rejects.toThrow(expectedError)
+  })
+
+  recordTest('object::save', async () => {
+    const objects = await api.object.all()
+    const testObject = objects.find((obj: JeedomObject) => obj.name === 'Test jeedom-node')
+    expect(testObject).toBeTruthy()
+    if (testObject) {
+      const response = await api.object.save({ id: testObject.id })
+      expect(response).toMatchSnapshot()
+    }
   })
 })

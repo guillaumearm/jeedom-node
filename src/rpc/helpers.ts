@@ -10,7 +10,7 @@ export type JsonRpcResponse<T = any> = {
   error?: { message: string; code: number }
 }
 
-export type Params = Record<string, string | number | null | undefined>
+export type Params = Record<string, any>
 
 export type RpcInterface = (method: string, params?: Params, id?: Nullable<number>) => Promise<any>
 

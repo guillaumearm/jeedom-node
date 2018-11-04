@@ -12,7 +12,11 @@ export type FullJeedomObject = JeedomObject & {
   eqLogics: any
 }
 
-export type ObjectByIdParams = { id: number }
+export type ObjectByIdParams = { id: string | number }
+
+export type ObjectSaveParams =
+  | (Partial<JeedomObject> & { id: string | number })
+  | (Partial<JeedomObject> & { name: string | number })
 
 export type ObjectApi = {
   object: {
@@ -20,5 +24,6 @@ export type ObjectApi = {
     full: () => Promise<FullJeedomObject[]>
     fullById: (params: ObjectByIdParams) => Promise<FullJeedomObject>
     byId: (params: ObjectByIdParams) => Promise<JeedomObject>
+    save: (params: ObjectSaveParams) => Promise<any>
   }
 }

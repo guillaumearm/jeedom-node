@@ -17,7 +17,7 @@
         ],
         "rawHeaders": [
             "Date",
-            "Sun, 04 Nov 2018 20:03:48 GMT",
+            "Sun, 04 Nov 2018 20:03:49 GMT",
             "Server",
             "Apache",
             "Access-Control-Allow-Origin",
@@ -28,6 +28,42 @@
             "gzip",
             "Content-Length",
             "1435",
+            "Connection",
+            "close",
+            "Content-Type",
+            "text/html; charset=UTF-8"
+        ]
+    },
+    {
+        "scope": "http://192.168.1.60:80",
+        "method": "POST",
+        "path": "/core/api/jeeApi.php",
+        "body": {
+            "jsonrpc": "2.0",
+            "id": null,
+            "method": "object::save",
+            "params": {
+                "id": "21",
+                "apikey": "42"
+            }
+        },
+        "status": 200,
+        "response": [
+            "1f8b08000000000000036d8ebd0ec2300c845f0599b5a0d2312b1223136245696bc090c4519c485455df9d34889f819becfbee2c8f701376c177a0a059d75001f5a05c32a68280924c0435160f9a4da64e5bccf301252e6e883ddb95e31e3339eb78c570fad6498e24d49a393f1ff62c1489dd9b77ecce744941bfcc11bc0ee8e23ed91603a8ba82a82f5b369c1758d64550cc033ee207ec8a32e851ee91bd5292acd561f84d656cb92583ffe994db24dee8e1f5dc343d015e58baf018010000"
+        ],
+        "rawHeaders": [
+            "Date",
+            "Sun, 04 Nov 2018 20:03:49 GMT",
+            "Server",
+            "Apache",
+            "Access-Control-Allow-Origin",
+            "*",
+            "Vary",
+            "Accept-Encoding",
+            "Content-Encoding",
+            "gzip",
+            "Content-Length",
+            "192",
             "Connection",
             "close",
             "Content-Type",
