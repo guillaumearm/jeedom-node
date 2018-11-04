@@ -7,8 +7,8 @@
   "scripts": {
     "clean": "rimraf dist/ doc/",
     "build": "tsc && npm run build:doc",
-    "build:doc": " typedoc --name jeedom-node --excludeExternals --readme none --out ./doc  --theme minimal --mode modules src/index.ts src/types.ts src/api/types",
-    "deploy:doc": "npm run build:doc && gh-pages -d doc -m 'chore: update gh-pages'",
+    "build:doc": "node scripts/build-doc && touch doc/.nojekyll",
+    "deploy:doc": "npm run build:doc && gh-pages -d doc -t -m 'chore: update gh-pages'",
     "prepublishOnly": "npm run clean && npm run build && npm run test && npm run lint",
     "bump": "conventional-bump -p angular",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
