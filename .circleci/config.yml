@@ -28,6 +28,7 @@ jobs:
 
       # test:all
       - run: npm run test:all
+      - run: npm run build:doc
 
       - store_artifacts:
           path: ./dist
