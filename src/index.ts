@@ -19,4 +19,3 @@ const Jeedom = (options: JeedomOptions): JeedomApi => {
 
 export default Jeedom
 export * from './types'
-export * from './api/types/index'

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rpc.config config::byKey 1`] = `"Jeedom"`;
+
+exports[`rpc.config config::save 1`] = `
+Array [
+  null,
+  "test",
+  null,
+]
+`;

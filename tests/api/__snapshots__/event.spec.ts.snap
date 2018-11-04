@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rpc.event event::changes 1`] = `
+Object {
+  "datetime": 1541339723.767,
+  "result": Array [
+    Object {
+      "datetime": 1541339604.5441,
+      "name": "cmd::update",
+      "option": Object {
+        "alertLevel": "none",
+        "cmd_id": "1546",
+        "collectDate": "2018-11-04 14:53:24",
+        "display_value": 1,
+        "value": 0,
+        "valueDate": "2018-11-04 14:53:24",
+      },
+    },
+  ],
+}
+`;
