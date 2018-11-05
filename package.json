@@ -39,7 +39,11 @@
     "type": "git",
     "url": "https://github.com/guillaumearm/jeedom-node.git"
   },
-  "author": "Guillaume ARM",
+  "author": {
+    "name": "Guillaume ARM",
+    "email": "trapcodien@gmail.com",
+    "url": "https://github.com/guillaumearm"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^23.3.9",
