@@ -6,11 +6,9 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "config::save",
+            "method": "summary::global",
             "params": {
-                "plugin": "__test__",
-                "key": "__test__",
-                "value": "test",
+                "key": "unknown_key",
                 "apikey": "42"
             }
         },
@@ -42,19 +40,15 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "config::byKey",
+            "method": "summary::global",
             "params": {
-                "plugin": "__test__",
-                "key": "__test__",
                 "apikey": "42"
             }
         },
         "status": 200,
-        "response": {
-            "jsonrpc": "2.0",
-            "id": null,
-            "result": "test"
-        },
+        "response": [
+            "1f8b08000000000000034d8d4b0ac3300c44efa2b529a5ddf9362516b58a6d197d3025e4eecd4625bb796f6066878ff290b94186c7ed0e09a8401ede5a0241f566907750dc5cc8bed17436e211549825f2a2517869a05637c37fdbe85dcfc16702766b68e10dfb4479990b86aadea95c2edbc983f56226af583e8e1f2af931dec8000000"
+        ],
         "rawHeaders": [
             "Date",
             "Mon, 05 Nov 2018 20:02:11 GMT",
@@ -62,44 +56,12 @@
             "Apache",
             "Access-Control-Allow-Origin",
             "*",
+            "Vary",
+            "Accept-Encoding",
+            "Content-Encoding",
+            "gzip",
             "Content-Length",
-            "43",
-            "Connection",
-            "close",
-            "Content-Type",
-            "text/html; charset=UTF-8"
-        ]
-    },
-    {
-        "scope": "http://192.168.1.60:80",
-        "method": "POST",
-        "path": "/core/api/jeeApi.php",
-        "body": {
-            "jsonrpc": "2.0",
-            "id": null,
-            "method": "config::save",
-            "params": {
-                "plugin": "__test__",
-                "key": "__test__",
-                "value": "",
-                "apikey": "42"
-            }
-        },
-        "status": 200,
-        "response": {
-            "jsonrpc": "2.0",
-            "id": null,
-            "result": null
-        },
-        "rawHeaders": [
-            "Date",
-            "Mon, 05 Nov 2018 20:02:11 GMT",
-            "Server",
-            "Apache",
-            "Access-Control-Allow-Origin",
-            "*",
-            "Content-Length",
-            "41",
+            "132",
             "Connection",
             "close",
             "Content-Type",

@@ -63,7 +63,7 @@ Array [
           Object {
             "alert": null,
             "configuration": Object {},
-            "currentValue": 4,
+            "currentValue": 3,
             "display": Object {},
             "eqLogic_id": "204",
             "eqType": "virtual",
@@ -97,7 +97,7 @@ Array [
         "order": "0",
         "status": Object {
           "danger": 0,
-          "lastCommunication": "2018-11-04 18:51:55",
+          "lastCommunication": "2018-11-05 20:18:30",
           "timeout": 0,
           "warning": 0,
         },

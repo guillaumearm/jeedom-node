@@ -6,19 +6,19 @@
         "body": {
             "jsonrpc": "2.0",
             "id": null,
-            "method": "object::fullById",
+            "method": "summary::byId",
             "params": {
-                "id": -1,
+                "id": "unknown_id",
                 "apikey": "42"
             }
         },
         "status": 200,
         "response": [
-            "1f8b08000000000000030dc7b10d80201005d055c8afd18085c52de10c801703413007da1077d7d7bd81d46a912b80b0cc061a7107953b670d16a9021a087567d06aacc6c9adb9e31f369fb8ab58bad4fb713eb3223559bcef0777cce20153000000"
+            "1f8b08000000000000030dcc410e40301005d0ab347fdd08161673094710da89a06664aa2cc4dd59becd7bb066153b02086d55c3638920292979b0991ae841d0c8a0ae6e3c76ce799c7fa19f563edd22a769b9c629b123576413bd65f88ff7fd00fe8f647f5b000000"
         ],
         "rawHeaders": [
             "Date",
-            "Mon, 05 Nov 2018 20:02:12 GMT",
+            "Mon, 05 Nov 2018 20:02:11 GMT",
             "Server",
             "Apache",
             "Access-Control-Allow-Origin",
@@ -28,7 +28,7 @@
             "Content-Encoding",
             "gzip",
             "Content-Length",
-            "98",
+            "105",
             "Connection",
             "close",
             "Content-Type",

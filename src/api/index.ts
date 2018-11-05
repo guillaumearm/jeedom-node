@@ -19,6 +19,10 @@ export const createJeedomApi = (jeedomRpc: RpcInterface): JeedomApi => ({
     byId: (params) => jeedomRpc('object::byId', params),
     save: (params) => jeedomRpc('object::save', params),
   },
+  summary: {
+    global: (params) => jeedomRpc('summary::global', params),
+    byId: (params) => jeedomRpc('summary::byId', params),
+  },
 })
 
 export * from './types/index'

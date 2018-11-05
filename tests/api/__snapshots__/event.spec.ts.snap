@@ -2,12 +2,18 @@
 
 exports[`rpc.event event::changes 1`] = `
 Object {
-  "datetime": 1541361826.1685,
+  "datetime": 1541448131.741,
   "result": Array [
     Object {
-      "datetime": 1541361577.0685,
-      "name": "eibd::monitor",
-      "option": "{\\"Mode\\":\\"Write\\",\\"AdresseGroupe\\":\\"1\\\\/1\\\\/12\\",\\"AdressePhysique\\":\\"1.1.44\\",\\"data\\":\\"0x  8b 32\\",\\"valeur\\":[139,50],\\"DataPointType\\":\\"1.xxx\\",\\"cmdJeedom\\":\\"La commande n'exites pas\\",\\"datetime\\":\\"04-11-2018 20:59:37\\"}",
+      "datetime": 1541448004.9389,
+      "name": "cmd::update",
+      "option": Object {
+        "cmd_id": "188",
+        "collectDate": "2018-11-05 21:00:04",
+        "display_value": "15G",
+        "value": "15G",
+        "valueDate": "2017-10-02 10:02:13",
+      },
     },
   ],
 }

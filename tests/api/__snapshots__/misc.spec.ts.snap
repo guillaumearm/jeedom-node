@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`rpc.misc datetime 1`] = `1541361827.1192`;
+exports[`rpc.misc datetime 1`] = `1541448131.8188`;
 
 exports[`rpc.misc ping 1`] = `"pong"`;
 
